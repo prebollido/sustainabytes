@@ -20,15 +20,11 @@ jobs:
         with:
           node-version: 22.14.0
           cache: 'npm'
-          cache-dependency-path: sustainabytes_portfolio/package-lock.json  # 👈 FIX HERE
+          cache-dependency-path: sustainabytes_portfolio/npm-shrinkwrap.json
 
       - name: Install dependencies
         working-directory: sustainabytes_portfolio
-        run: npm ci
-
-      - name: Build and export project
-        working-directory: sustainabytes_portfolio
-        run: npm run build && npm run export
+        run: npm cis
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
