@@ -24,7 +24,7 @@ jobs:
 
       - name: Install dependencies
         working-directory: sustainabytes_portfolio
-        run: npm cis
+        run: npm ci
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
