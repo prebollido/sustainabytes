@@ -3,7 +3,6 @@ name: Deploy Next.js to GitHub Pages
 on:
   push:
     branches: [ main ]
-  workflow_dispatch:
 
 permissions:
   contents: write
@@ -13,24 +12,25 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22.14.0   # 👈 match your local version
+          cache: 'npm'
 
       - name: Install dependencies
-        working-directory: sustainabytes_portfolio
+        working-directory: ./sustainabytes_portfolio   # 👈 your actual project folder
         run: npm ci
 
-      - name: Build and export
-        working-directory: sustainabytes_portfolio
+      - name: Build and export project
+        working-directory: ./sustainabytes_portfolio
         run: npm run build && npm run export
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: sustainabytes_portfolio/out
+          publish_dir: ./sustainabytes_portfolio/out
