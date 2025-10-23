@@ -18,19 +18,20 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 22.14.0   # match your local version
+          node-version: 22.14.0
           cache: 'npm'
+          cache-dependency-path: sustainabytes_portfolio/package-lock.json  # 👈 FIX HERE
 
       - name: Install dependencies
-        working-directory: ./sustainabytes_portfolio
+        working-directory: sustainabytes_portfolio
         run: npm ci
 
       - name: Build and export project
-        working-directory: ./sustainabytes_portfolio
+        working-directory: sustainabytes_portfolio
         run: npm run build && npm run export
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./sustainabytes_portfolio/out
+          publish_dir: sustainabytes_portfolio/out
