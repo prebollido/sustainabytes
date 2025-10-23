@@ -8,7 +8,6 @@
     "preview": "npx serve@latest out",
     "start": "next start",
     "lint": "eslint",
-    "export": "next export",
     "deploy": "next build"
   },
   "dependencies": {
