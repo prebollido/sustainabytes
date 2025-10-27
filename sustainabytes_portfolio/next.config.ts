@@ -8,10 +8,10 @@ const nextConfig: NextConfig = {
   output: 'export',
   basePath: isProd ? '/sustainabytes' : '',
   assetPrefix: isProd ? '/sustainabytes/' : '',
-  images: {
-    unoptimized: true, 
+  images: { unoptimized: true },
+  env: {
+    BASE_PATH: isProd ? "/sustainabytes" : "",
   },
-  trailingSlash: true, 
+  trailingSlash: true,
 }
-
 export default nextConfig
