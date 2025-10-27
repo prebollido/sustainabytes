@@ -9,10 +9,10 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "preview": "npx serve@latest out",
     "start": "next start",
     "lint": "eslint",
-    "deploy": "next build"
+    "predeploy": "npm run build",
+    "deploy": "git add -f out && git commit -m 'deploy' && git push origin `git subtree split --prefix sustainabytes_portfolio/out main`:gh-pages --force"
   },
   "dependencies": {
     "react": "19.2.0",
