@@ -73,6 +73,14 @@ export default function Home() {
           </p>
         </div>
       </section>
+      <section id="methodology" className="h-screen snap-start flex flex-col justify-center items-center relative">
+        <div className="z-10 text-center">
+          <h1 className="h1">Methodology</h1>
+          <p className="p">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed metus urna, dignissim ac efficitur at, eleifend vel mi. Donec at elementum nisl. Cras in ullamcorper ex. Praesent porta eget justo pharetra tristique. Suspendisse dictum neque vel nisi tincidunt egestas. Sed fringilla nunc metus, quis vestibulum ligula pharetra vitae. Curabitur faucibus diam metus, sed dapibus diam tempus tempor. Nunc efficitur ex id sapien fringilla cursus. Nulla venenatis faucibus nulla. Sed dapibus a libero in congue. Nulla a diam eu enim convallis condimentum. Donec pellentesque maximus purus non sollicitudin. Phasellus vehicula ex tristique tristique placerat. Phasellus eu tempus diam.
+          </p>
+        </div>
+      </section>
         <button
           onClick={scrollToTop}
           className="fixed bottom-4 right-4 bg-teal-600 text-white p-3 rounded-full shadow-lg hover:bg-teal-700 font-quicksand font-bold text-[20px] mx-6 my-3 transition delay-150">
