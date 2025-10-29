@@ -39,9 +39,8 @@
 }
 .p {
     text-align: center;
-    padding-left: 100px;
-    padding-right: 100px;
     font-family: var(--font-karla);
+    font-weight: 500;
 }
 /* globals.css or a separate CSS file */
 .my-scrollbar::-webkit-scrollbar {
