@@ -7,6 +7,8 @@ Kindly check this file to see update log, how to use repo, and how to deploy pag
     - contains relevant repo info
 2. sustainabytes_portfolio
     - project web portfolio
+3. sustainabytes.ipynb
+    - jupyter notebook for anything data science related work
 
 
 ## I. Update Logs
@@ -14,7 +16,8 @@ Logs of important updates. \
 **-------------------------------------------- UPDATE LOGS --------------------------------------------** 
 
 1. 02/10/25 5:45 pm | Pammy | Initial page deployment 
-2. 28/1025 3:15 am | Pammy | Migrate to React (next.js) and Tailwind CSS 
+2. 28/10/25 3:15 am | Pammy | Migrate to React (next.js) and Tailwind CSS
+3. 03/11/25 6:06 pm | Pammy | Minor page changes and upload jupyter notebook
 
 
 _FORMAT: dd/mm/yy hh:mm am/pm | dev | commit message_
@@ -59,5 +62,19 @@ The page is mostly front-end stuff only. Current contents are tentative, design 
     ```
     There will be some weird Modified/Add/Unsaved markers in VSCode, but these are usually ignored by `/.gitignore` so no need to commit these "changes". Only commit changes if there are changes in the webpage itself.
 9. If you have to modify the `.ts` and `.json` files, do include a quick guide especially if it affects how the page is built and deployed. Ammend the necessary instructions if needed.
+
+## IV. Working on Jupyter Notebook
+### Option 1: Using Google Colab
+1. This notebook will also be uploaded on [Google Colab](link). Kindly use Colab for any simultaneous programming.
+2. Do not test run on Google Colab. In your dev branch, make a copy of the notebook and open it locally on your machine. Do your testing and changes there.
+3. Once you have finalized your changes, edit ONLY the part you modified in the Google Colab file.
+4. Once we are done with the project, download the notebook and push back into the repository.
+
+### Option 2: Purely Github
+1. Like the usual, ensure that the notebook is on your branch. 
+2. Run jupyter notebook locally.
+3. Push your changes to your branch first. 
+4. Once you have finalized your work, and the team has checked it, push the notebook back to the main branch, so that everyone has an updated copy.
+
 ##
 _**Note:** I made this sort of guide based on my experience deploying the page (it was a bit challenging). I want to make it a bit easier to work on the portfolio since the bulk of our effort should go on the data science part of the project. I may also be wrong on some stuff and may have generalized some concepts/instructions. If, by any chance, you encounter better methods or have implemented complex scripts/styles, do modify some instructions or include it in the guide!_
