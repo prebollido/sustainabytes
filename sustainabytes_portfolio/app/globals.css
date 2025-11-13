@@ -32,6 +32,11 @@
     font-weight: 700;
     font-size: 60pt;
 }
+.button {
+    text-align: left;
+    font-family: var(--font-karla);
+    font-weight: 700;
+}
 .h3 {
     margin-top: -10px;
     font-family: var(--font-karla);
@@ -39,6 +44,11 @@
 }
 .p {
     text-align: center;
+    font-family: var(--font-karla);
+    font-weight: 500;
+}
+.ol, .li {
+    text-align: left;
     font-family: var(--font-karla);
     font-weight: 500;
 }
