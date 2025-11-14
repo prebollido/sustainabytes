@@ -15,9 +15,10 @@ Kindly check this file to see update log, how to use repo, and how to deploy pag
 Logs of important updates. \
 **-------------------------------------------- UPDATE LOGS --------------------------------------------** 
 
-1. 02/10/25 5:45 pm | Pammy | Initial page deployment 
-2. 28/10/25 3:15 am | Pammy | Migrate to React (next.js) and Tailwind CSS
-3. 03/11/25 6:06 pm | Pammy | Minor page changes and upload jupyter notebook
+1. 02/10/25 05:45 pm | Pammy | Initial page deployment 
+2. 28/10/25 03:15 am | Pammy | Migrate to React (next.js) and Tailwind CSS
+3. 03/11/25 06:06 pm | Pammy | Minor page changes and upload jupyter notebook
+4. 14/11/25 10:31 am | Pammy | Updated page contents, uploaded plots, and minor design changes
 
 
 _FORMAT: dd/mm/yy hh:mm am/pm | dev | commit message_
@@ -65,7 +66,7 @@ The page is mostly front-end stuff only. Current contents are tentative, design 
 
 ## IV. Working on Jupyter Notebook
 ### Option 1: Using Google Colab
-1. This notebook will also be uploaded on [Google Colab](link). Kindly use Colab for any simultaneous programming.
+1. This notebook will also be uploaded on [Google Colab](olab.research.google.com/drive/10OHsNQN-2Xl8UADVcTiejJQ4NErDPZk1). Kindly use Colab for any simultaneous programming.
 2. Do not test run on Google Colab. In your dev branch, make a copy of the notebook and open it locally on your machine. Do your testing and changes there.
 3. Once you have finalized your changes, edit ONLY the part you modified in the Google Colab file.
 4. Once we are done with the project, download the notebook and push back into the repository.
