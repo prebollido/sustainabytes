@@ -36,7 +36,7 @@ export default function Intro() {
             </p>
           </div>
           <div id="right" className="w-200 h-150 p p-7 flex items-center">
-            <p className="text-justify pb-2 h-150 align-middle">
+            <p className="text-justify pb-2 align-middle">
               Sustainabytes investigates how food price dynamics and exchange
               rates affect household expenditure and poverty in the Philippines.
               Merging datasets from The World Bank and Philippine Statistics
