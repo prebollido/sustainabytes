@@ -19,8 +19,8 @@ export default function Intro() {
             <div id="left" className="text-center w-200 px-10 align-center">
               <Image src={getImagePath("/sdg2.svg")} width={500} height={500} alt="logo" className="p-2.5 py-20 mx-auto"/>
               <p className="p">
-                  How do food price fluctuations affect poverty incidence and household expenditure?
-                  Which food products are more susceptible to exchange rate fluctuations and import dependency?
+                  How do food price fluctuations affect poverty incidence?
+                  Which food products are more susceptible to exchange rate fluctuations?
 
               </p>
               <p className="p">
@@ -30,7 +30,7 @@ export default function Intro() {
                   Accesible. Affordable. Available.
               </p>
             </div>
-            <div id="right" className="w-200 h-150 p p-10 text-lg">
+            <div id="right" className="w-200 h-150 p p-7">
               <p className="text-justify pb-2 h-150">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra neque turpis, ac porttitor tellus accumsan in. Morbi at tempus dolor. Phasellus ut ornare risus. Phasellus mauris dolor, sagittis eu congue sit amet, hendrerit sed nisl. Morbi volutpat erat at odio ultrices dignissim. Nam ut risus nisi. Maecenas ac lorem sagittis, pharetra arcu non, mollis metus.
               <br className="pb-2"/>
@@ -47,19 +47,19 @@ export default function Intro() {
             <div id="objective1" className="flex flex-col bg-(--background)/70 justify-center w-75 h-60 items-center p-5 rounded-3xl mx-3">
               <Image src={getImagePath("/1.svg")} width={100} height={100} alt="1" className="p-5"/> 
               <p className="p pb-5">
-                Determine the relationship between monthly food prices and poverty incidence and monthly household expenditure
+                Determine the relationship between monthly food prices and poverty incidence
               </p>
             </div>
             <div id="objective2" className="flex flex-col bg-(--background)/70 justify-center w-75 h-60 items-center p-5 rounded-3xl mx-3">
               <Image src={getImagePath("/2.svg")} width={100} height={100} alt="1" className="p-5"/> 
               <p className="p pb-5"> 
-                Analyze how various food product categories respond to exchange rate fluctuations and import dependencies
+                Analyze how various food product categories respond to exchange rate fluctuations
               </p>
             </div>
             <div id="objective3" className="flex flex-col bg-(--background)/70 justify-center w-75 h-60 items-center p-5 rounded-3xl mx-3">
               <Image src={getImagePath("/3.svg")} width={100} height={100} alt="1" className="p-5"/> 
               <p className="p">
-                Identify and rank food products based on their sensitivity to exchange rate fluctuations and import dependencies
+                Identify and rank food products based on their sensitivity to exchange rate fluctuations
               </p>
             </div>
             <div id="objective4" className="flex flex-col bg-(--background)/70 justify-center w-75 h-60 items-center p-5 rounded-3xl mx-3">

@@ -28,7 +28,7 @@ export default function Data() {
             </button>
             <div className="w-[60vw] items-center">
               <p className="p text-center">
-                The collective data set is a combination of four data sets: (1) Real Time Food Prices, (2) Real Time Currency Prices, (3) Annual Family Expenditure, and (4) Annual Poverty Incidence. These data sets include the following features useful for the project:
+                The collective data set is a combination of four data sets: (1) Real Time Food Prices, (2) Real Time Currency Prices, and (3) Annual Poverty Incidence. These data sets include the following features useful for the project:
               </p>
             </div>
             
@@ -57,7 +57,7 @@ export default function Data() {
           
         <p className="p">
             <b>Data Collection Process</b><br/>
-            The data sets for this project are sourced from The Humanitarian Data Exchange (HDX) and the Philippine Statistics Agency (PSA). Specifically, food price, exchange rate, and import dependency data are taken from HDX, while household expenditure and poverty incidence data are taken from PSA. 
+            The data sets for this project are sourced from The Humanitarian Data Exchange (HDX) and the Philippine Statistics Agency (PSA). Specifically, food price and exchange rate data are taken from HDX, while poverty incidence data are taken from PSA. 
             <br/>
             <br/>
             <b>Data Size</b><br/>
