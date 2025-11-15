@@ -21,23 +21,19 @@ export default function Discussion() {
         <p className="p px-[100px]"></p>
         <h2 className="h2">Exploratory Data Analysis</h2>
         <h3 className="h3">Research Question 1</h3>
-        <div className="flex justify-center">
-          <Image
-            src={getImagePath("/rq1.png")}
-            width={750}
-            height={500}
-            alt="price vs poverty vs expenditure"
-          />
-        </div>
+        <Image
+          src={getImagePath("/rq1.png")}
+          width={750}
+          height={500}
+          alt="price vs poverty vs expenditure"
+        />
         <h3 className="h3 mt-12">Research Question 2</h3>
-        <div className="flex justify-center">
-          <Image
-            src={getImagePath("/rq2.png")}
-            width={750}
-            height={500}
-            alt="beans"
-          />
-        </div>
+        <Image
+          src={getImagePath("/rq2.png")}
+          width={750}
+          height={500}
+          alt="beans"
+        />
         <p className="p mt-8">Insert Discussion of Hypothesis Testing here</p>
         <br />
         <b>Machine Learning</b>
