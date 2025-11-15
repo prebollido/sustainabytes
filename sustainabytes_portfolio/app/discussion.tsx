@@ -20,49 +20,22 @@ export default function Discussion() {
         <h1 className="h1">Discussion</h1>
         <p className="p px-[100px]"></p>
         <h2 className="h2">Exploratory Data Analysis</h2>
-        <h3 className="h3 mt-12">Research Question 1</h3>
-        <div className="flex justify-center flex-wrap gap-4 mb-8">
+        <h3 className="h3">Research Question 1</h3>
+        <div className="flex justify-center">
           <Image
-            src={getImagePath("/rq1-price-poverty-expenditure.png")}
-            width={500}
-            height={250}
+            src={getImagePath("/rq1.png")}
+            width={750}
+            height={500}
             alt="price vs poverty vs expenditure"
           />
         </div>
         <h3 className="h3 mt-12">Research Question 2</h3>
-        <div className="flex justify-center flex-wrap gap-4 mb-8">
+        <div className="flex justify-center">
           <Image
-            src={getImagePath("/rq2-beans.png")}
-            width={500}
-            height={250}
-            alt="beans"
-          />
-          <Image
-            src={getImagePath("/rq2-cabbage.png")}
-            width={500}
-            height={250}
-            alt="cabbage"
-          />
-          <Image
-            src={getImagePath("/rq2-carrot.png")}
-            width={500}
-            height={250}
-            alt="carrot"
-          />
-          <Image
-            src={getImagePath("/rq2-barchart.png")}
-            width={500}
-            height={250}
-            alt="barchart"
-          />
-        </div>
-        <h3 className="h3 mt-12">Nutshell Plot</h3>
-        <div className="flex justify-center mb-8">
-          <Image
-            src={getImagePath("/nutshell.svg")}
+            src={getImagePath("/rq2.png")}
             width={750}
             height={500}
-            alt="nutshell plot"
+            alt="beans"
           />
         </div>
         <p className="p mt-8">Insert Discussion of Hypothesis Testing here</p>
