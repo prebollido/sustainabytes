@@ -20,21 +20,28 @@ export default function Discussion() {
         <h1 className="h1">Discussion</h1>
         <p className="p px-[100px]"></p>
         <h2 className="h2">Exploratory Data Analysis</h2>
-        <h3 className="h3">Research Question 1</h3>
+        <h3 className="h3 mt-12">Research Question 1</h3>
         <Image
           src={getImagePath("/rq1.png")}
           width={750}
           height={500}
-          alt="price vs poverty vs expenditure"
+          alt="food price vs poverty incidence through the years"
         />
         <h3 className="h3 mt-12">Research Question 2</h3>
         <Image
           src={getImagePath("/rq2.png")}
           width={750}
           height={500}
-          alt="beans"
+          alt="effects of exchange rate vs food products"
         />
-        <p className="p mt-8">Insert Discussion of Hypothesis Testing here</p>
+        <h3 className="h3 mt-12">Nutshell Plot</h3>
+        <Image
+          src={getImagePath("/nutshell.svg")}
+          width={750}
+          height={500}
+          alt="nutshell plot"
+        />
+        <p className="p mt-12">Insert Discussion of Hypothesis Testing here</p>
         <br />
         <b>Machine Learning</b>
         <br />
