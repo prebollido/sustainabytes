@@ -2,6 +2,7 @@
 
 :root {
   --background: #5b8e7d;
+  --midground: #75a091; 
   --foreground: white;
 }
 
@@ -98,4 +99,9 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+#prev:hover, #next:hover {
+  background-color: rgba(0,0,0,0.8);
 }
