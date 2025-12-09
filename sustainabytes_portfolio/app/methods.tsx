@@ -93,9 +93,9 @@ function Slide() {
 
   return (
     <div id="slideshowContainer" className="h-[80svh] w-[80svw] object-center bg-(--midground) outline relative overflow-y-scroll">
-      <a id="prev" className="absolute content-center inset-y-0 left-0 w-auto px-[16px] text-[18px] font-bold text-white ease-[0.6s] cursor-pointer select-none" onClick={goToPrev}>&#10094;</a>
+      <a id="prev" className="absolute content-center inset-y-0 left-0 w-auto px-[16px] text-[18px] font-bold text-white ease-[0.6s] cursor-pointer select-none hover:bg-[#43695c]" onClick={goToPrev}>&#10094;</a>
       {slides[slide]}
-      <a id="next" className="absolute content-center inset-y-0 right-0 w-auto px-[16px] text-[18px] font-bold text-white ease-[0.6s] cursor-pointer select-none" onClick={goToNext}>&#10095;</a>          
+      <a id="next" className="absolute content-center inset-y-0 right-0 w-auto px-[16px] text-[18px] font-bold text-white ease-[0.6s] cursor-pointer select-none hover:bg-[#43695c]" onClick={goToNext}>&#10095;</a>          
     </div>
   )
 }
