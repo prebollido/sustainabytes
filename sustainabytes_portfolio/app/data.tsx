@@ -67,21 +67,76 @@ function Features() {
   )
 }
 
+function CollectionContent() {
+  return (
+    <p className="p p-[10px]">
+      The data sets for this project are sourced from The Humanitarian Data Exchange (HDX) and the Philippine Statistics Agency (PSA). Specifically, food price and exchange rate data are taken from HDX, while poverty incidence data are taken from PSA. 
+    </p>
+  )
+}
+
+function Collection() {
+  const contents = [FeaturesContent(), CollectionContent(), SizeContent()]
+  const titles = ["Data Set Details", "Data Collection Process",]
+  const [visible, setVisible] = useState(false);  
+
+  function toggleVisible() {
+    setVisible(!visible);
+  }
+
+  return (
+    <div>
+      <button onClick={toggleVisible} className="border-b-2 border-white-500 text-white px-4 py-2 rounded-md hover:bg-[#43695c] transition button text-xl font-black w-[75vw]">
+              <div className="flex justify-between items-center w-full ">
+                <p>Data Collection Process<br/></p>
+                <Image src={getImagePath("/down-arrow.png")} width={30} height={30} alt="arrow" />
+              </div>
+            </button>
+
+      {visible && <CollectionContent />}
+    </div>
+  )
+}
+
+function SizeContent() {
+  return (
+    <p className="p p-[10px]">
+      Before data cleaning and preprocessing, there are 6324 rows of data and 19 features.
+    </p>
+  )
+}
+
+function Size() {
+  const [visible, setVisible] = useState(false);  
+
+  function toggleVisible() {
+    setVisible(!visible);
+  }
+
+  return (
+    <div>
+      <button onClick={toggleVisible} className="border-b-2 border-white-500 text-white px-4 py-2 rounded-md hover:bg-[#43695c] transition button text-xl font-black w-[75vw]">
+              <div className="flex justify-between items-center w-full ">
+                <p>Data Size<br/></p>
+                <Image src={getImagePath("/down-arrow.png")} width={30} height={30} alt="arrow" />
+              </div>
+            </button>
+
+      {visible && <SizeContent />}
+    </div>
+  )
+}
+
 export default function Data() {
   return (
-    <section id="data" className="snap-start flex flex-col justify-center items-center relative">
+    <section id="data" className="snap-start flex flex-col justify-center items-center relative mb-[50px]">
         <div className="z-10 w-[70vw]">
           <h1 className="h1 text-center">Data</h1>
-          <p className="p p-[10px]">
-            <b>Data Collection Process</b><br/>
-            The data sets for this project are sourced from The Humanitarian Data Exchange (HDX) and the Philippine Statistics Agency (PSA). Specifically, food price and exchange rate data are taken from HDX, while poverty incidence data are taken from PSA. 
-            <br/>
-            <br/>
-            <b>Data Size</b><br/>
-            Before data cleaning and preprocessing, there are 6324 rows of data and 19 features.
-          </p>
-          <br/>
           <Features />    
+          <br />
+          <Collection />
+          <br />
+          <Size /> 
         </div>
     </section>
   );
