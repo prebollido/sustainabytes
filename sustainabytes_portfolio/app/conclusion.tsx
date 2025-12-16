@@ -18,7 +18,7 @@ export default function Conclusion() {
             context-dependent. This means it may be important to determine the context as this could be the key to creating policies and 
             action plans for controlling the unknown driving factors causing food prices to affect household expenditure in a certain way. 
           </p>
-          <p className="p px-[100px] mt-[10px]">
+          <p className="p px-[100px] mt-6">
             Meanwhile, exchange rate fluctuations have a noticeable massive effect on the prices of certain food products, which include 
             a lot of those needed for the Filipino diet. This means if these fluctuations are not handled with care, it will most likely 
             be easy for a family to develop financial problems as they will face more difficulties in ensuring they are well-fed. It 
@@ -26,7 +26,7 @@ export default function Conclusion() {
             that the diets of these families do not suffer significantly. If this is not done, they may resort to eating other food that 
             may not give them enough nourishment. 
           </p>
-          <p className="p px-[100px] mt-[10px]">
+          <p className="p px-[100px] mt-6">
             Figuring out the relationship between food prices and household expenditure as well as exchange rate fluctuations in the 
             Philippines is also important in showing how drastic the Filipino household budget adapts to certain changes. This gives 
             patterns that predict how much Filipinos have to spend when food prices and exchange rates shift. Understanding these patterns help economists,  government officials, and NGOs to estimate how much assistance to give to the Filipinos for them to adjust properly to the gravity of future fluctuations. The country will then have better socioeconomic foresight needed to reduce the impact of these fluctuations on the Filipinos in a timely manner. 
