@@ -314,14 +314,14 @@ export default function Discussion() {
           <br />
           <h2 className="h2">Machine Learning</h2>
           <p className="p mt-6">Detailed in the following tables are a given year and province, the actual values of a row in the dataset 
-            from that year and province (chosen at random if there are more than one), the values predicted by the model, and, underneath,
-             the average root mean squared error of all predictions across categories.</p>
+            from that year and province (chosen at random if there are more than one), the values predicted by the model, and the percent
+            error of each prediction.</p>
           <p className="p mt-6">Numbers are rounded to the nearest thousandths (i.e. to 3 decimal places). </p>
           <Tables />
           <p className="p mt-6">
             In the case of “Metro Manila, 2025”, the predictions are not as accurate as hoped, with 7 out of 15 predictions having an 
-            error margin higher than 10%. However, for “Rizal, 2024” and “Cebu, 2023”, there are only 1 and 3 predictions, respectively 
-            with a similar error margin, and the others have less error. It is possible that the NCR’s data has a higher rate of 
+            error margin higher than 10%. However, for “Rizal, 2024” and “Cebu, 2023”, there are only 1 and 3 predictions, respectively, 
+            with a similar error margin, and the others are all less than that. It is possible that the NCR’s data has a higher rate of 
             variability or is affected more by other factors than data from other provinces of previous years, which could explain the 
             higher error overall. Otherwise, an error margin of 10% or less represents in most cases a difference of up to 50 pesos, 
             which does not seem unacceptable given how prices can vary throughout a year. 
