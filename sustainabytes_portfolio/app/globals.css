@@ -101,3 +101,13 @@ body {
   margin: 0;
   padding: 0;
 }
+
+/* for the table in R&D */
+th {
+  border: 1px solid var(--midground); 
+  padding: 5px;
+}
+td {
+  border: 1px solid var(--midground); 
+  padding: 5px; 
+}
