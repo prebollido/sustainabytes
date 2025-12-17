@@ -15,12 +15,17 @@ const PHOTO_DIM = 150;
 export default function About() {
   return (
     <section id="team" className="h-screen snap-start flex flex-col justify-center items-center relative">
+        <img
+          src={getImagePath("/bg.jpg")}
+          className="absolute w-full h-full object-cover opacity-45 pointer-events-none"
+          alt="background"
+        />
         <div className="z-10 text-center">
           <h1 className="h1">The Team</h1>
-          <div className="flex flex-col md:flex-row w-[80vw] items-center justify-center">
+          <div className="flex flex-col md:flex-row items-center justify-center w-[75vw] bg-white/15 p-15 rounded-3xl my-5 ml-[-45] mx-auto">
             <div
               id="about-pammy"
-              className="flex flex-col bg-(--background)/70 justify-center w-75 h-60 items-center p-5 rounded-3xl mx-3">
+              className="flex flex-col justify-center w-75 h-60 items-center p-5">
               <Image
                 src={getImagePath("/pfp_pammy.jpg")}
                 width={PHOTO_DIM}
@@ -33,7 +38,7 @@ export default function About() {
             </div>
             <div
               id="about-soph"
-              className="flex flex-col bg-(--background)/70 justify-center w-75 h-60 items-center p-5 rounded-3xl mx-3">
+              className="flex flex-col justify-center w-75 h-60 items-center p-5">
               <Image
                 src={getImagePath("/pfp_soph.jpg")}
                 width={PHOTO_DIM}
@@ -46,7 +51,7 @@ export default function About() {
             </div>
             <div
               id="about-anton"
-              className="flex flex-col bg-(--background)/70 justify-center w-75 h-60 items-center p-5 rounded-3xl mx-3">
+              className="flex flex-col justify-center w-75 h-60 items-center p-5">
               <Image
                 src={getImagePath("/pfp_anton.jpg")}
                 width={PHOTO_DIM}
@@ -59,7 +64,7 @@ export default function About() {
             </div>
             <div
               id="about-leo"
-              className="flex flex-col bg-(--background)/70 justify-center w-75 h-60 items-center p-5 rounded-3xl mx-3">
+              className="flex flex-col justify-center w-75 h-60 items-center p-5">
               <Image
                 src={getImagePath("/pfp_leo.jpg")}
                 width={PHOTO_DIM}

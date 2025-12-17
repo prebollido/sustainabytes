@@ -8,7 +8,7 @@ export default function Intro() {
   return (
     <section
       id="intro"
-      className="snap-start flex flex-col justify-center items-center pt-40 relative">
+      className="snap-start flex flex-col justify-center items-center pt-40 relative ">
       <img
         src={getImagePath("/veggies2.jpg")}
         className="absolute mt-[-160] w-full h-full object-cover opacity-45 pointer-events-none"
